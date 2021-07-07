@@ -1,6 +1,6 @@
 {
   "name": "dpgen",
-  "version": "0.1.7",
+  "version": "0.1.6",
   "description": "Generate your design pattern",
   "main": "./lib/index.js",
   "bin": {
@@ -17,7 +17,7 @@
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
     "prerelease": "npm run lint && npm run test && npm run build",
     "release": "standard-version",
-    "prepare-gpr": "json -I -f package.json -e \"this.name=\"@moh3n9595/dpgen\"\""
+    "prepare-gpr": "json -I -f package.json -e \"this.name='@moh3n9595/dpgen'\""
   },
   "repository": {
     "type": "git",
