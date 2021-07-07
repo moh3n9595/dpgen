@@ -1,4 +1,4 @@
-import { _nameValidation } from './index';
+import { _nameValidation, validation } from './index';
 
 const mockExit = jest.spyOn(process, 'exit').mockImplementation();
 const mockLog = jest.spyOn(console, 'log').mockImplementation();
@@ -25,6 +25,11 @@ describe('name validation', () => {
     });
     it('_ and numbers are ok', () => {
         _nameValidation('test_test_123');
+        expect(mockLog).toHaveBeenCalledTimes(0);
+        expect(mockExit).toHaveBeenCalledTimes(0);
+    });
+    it('validating all should works', () => {
+        validation({ name: 'test_test_123' });
         expect(mockLog).toHaveBeenCalledTimes(0);
         expect(mockExit).toHaveBeenCalledTimes(0);
     });
