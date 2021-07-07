@@ -18,6 +18,11 @@
     "prerelease": "npm run lint && npm run test && npm run build",
     "release": "standard-version"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moh3n9595/dpgen.git"
+  },
+  "homepage": "https://github.com/moh3n9595/dpgen#readme",
   "keywords": [
     "js",
     "design-patterns",
