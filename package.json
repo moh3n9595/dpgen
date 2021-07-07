@@ -1,0 +1,64 @@
+{
+  "name": "dpgen",
+  "version": "0.1.0",
+  "description": "Generate your design pattern",
+  "main": "./lib/index.js",
+  "bin": {
+    "dpgen": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --exec 'ts-node' src/index.ts",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "jest",
+    "prebuild": "rm -rf lib",
+    "build": "tsc -p .",
+    "postbuild": "cp -R src/templates lib",
+    "local": "npm link && dpgen",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "keywords": [
+    "js",
+    "design-patterns",
+    "generator",
+    "cli"
+  ],
+  "author": {
+    "name": "Mohsen Madani",
+    "email": "mohsenando@gmail.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "ejs": "^3.1.6",
+    "figlet": "^1.5.0",
+    "fs-extra": "^10.0.0",
+    "is-valid-var-name": "^1.0.2",
+    "prompts": "^2.4.1",
+    "yargs": "^17.0.1",
+    "yargs-parser": "^20.2.9"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.6",
+    "@types/fs-extra": "^9.0.11",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.9",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
