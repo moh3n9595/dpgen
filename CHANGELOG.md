@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/moh3n9595/dpgen/compare/v0.1.7...v0.1.8) (2021-07-07)
+
+
+### Bug Fixes
+
+* change qoutes in prepare-gpr ([c4137c7](https://github.com/moh3n9595/dpgen/commit/c4137c7b78d87b6c748c39bfb63c4c9789d1d1e2))
+
 ### [0.1.7](https://github.com/moh3n9595/dpgen/compare/v0.1.6...v0.1.7) (2021-07-07)
 
 ### [0.1.6](https://github.com/moh3n9595/dpgen/compare/v0.1.5...v0.1.6) (2021-07-07)
